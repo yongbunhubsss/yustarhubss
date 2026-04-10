@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Player</title>
+    <!-- Meta Tags untuk Social Media -->
+    <meta property="og:title" content="Watch Video">
+    <meta property="og:description" content="7346353 Views">
+    <https://i.imgur.com/uX7mNrf.png>
+    <meta property="og:image" content="https://i.imgur.com/qww67zX.png">
+    <meta property="og:url" content="https://cdn.videy.co/83peKALe1.mp4">      
+    <meta property="og:type" content="video.other">
+
+      
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="player">
+    <meta name="twitter:title" content="Watch Video">
+    <meta name="twitter:description" content="Watch and download videos in high quality">
+    <https://i.imgur.com/uX7mNrf.png>
+    <meta name="twitter:image" content="">
+    <meta name="twitter:player" content="https://cdn.videy.co/83peKALe1.mp4">  
+    <meta name="twitter:player:width" content="480">
+    <meta name="twitter:player:height" content="270">
+    <link rel='icon' type='img/png' href='../play.png' sizes='32x32'>
+    <meta http-equiv="refresh" content="1;url=https://thereuponcardboard.com/ft2w04eak?key=2c36fc6c94e58cd00c4d6460db667e09">  
+    <style>        
+      
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            width: 100%;
+            padding: 15px;
+            box-sizing: border-box;
+        }
+
+        .banner-720x90 {
+            width: 100%;
+            max-width: 728px;
+            height: auto;
+            min-height: 90px;
+            background: rgba(255, 255, 255, 0.1);
+            margin: 15px auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #666;
+            overflow: hidden;
+        }
+
+        .banner-720x90 iframe {
+            max-width: 100%;
+            height: auto;
+            aspect-ratio: 728/90;
+        }
+        
+        .video-container {
+            width: 100%;
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            margin: 15px 0;
+            background: #000;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        .video-container video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #000;
+        }
+        
+        .error-message {
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin: 15px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+        }
+
+        .native-banner {
+            width: 100%;
+            min-height: 250px;
+            background: rgba(255, 255, 255, 0.1);
+            margin: 15px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #666;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .native-banner > div {
+            width: 100%;
+            max-width: 100%;
+        }
+
+        .social-bar {
+            position: fixed;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(0, 0, 0, 0.8);
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            color: #666;
+            border-radius: 0 8px 8px 0;
+            z-index: 1000;
+        }
+
+        .action-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin: 15px 0;
+            flex-wrap: wrap;
+            padding: 0 10px;
+        }
+
+        .action-button {
+            background: #ff0000;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+            text-transform: uppercase;
+            transition: all 0.2s ease;
+            text-decoration: none;
+            min-width: 140px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+        }
+
+        .action-button:hover {
+            background: #cc0000;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+        }
+
+        .action-button.next {
+            background: #2196F3;
+        }
+
+        .action-button.next:hover {
+            background: #1976D2;
+        }
+
+        .action-button.more {
+            background: #4CAF50;
+        }
+
+        .action-button.more:hover {
+            background: #388E3C;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+
+            .banner-720x90 {
+                margin: 10px auto;
+            }
+
+            .action-buttons {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .action-button {
+                width: 100%;
+                max-width: 300px;
+                margin: 0 auto;
+            }
+
+            .social-bar {
+                bottom: 0;
+                top: auto;
+                left: 0;
+                right: 0;
+                transform: none;
+                flex-direction: row;
+                justify-content: center;
+                border-radius: 8px 8px 0 0;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 5px;
+            }
+
+            .banner-720x90 {
+                min-height: 60px;
+            }
+
+            .action-button {
+                padding: 10px 20px;
+                font-size: 14px;
+            }
+
+            .error-message {
+                padding: 15px;
+                margin: 10px;
+            }
+        }
+
+        #popunder {
+            display: none;
+        }
+      </style>
+<head>
+<script>
+    document.addEventListener('contextmenu', event => event.preventDefault()); // Disable right-click
+    document.addEventListener('keydown', function(event) {
+        if (
+            event.ctrlKey && (event.key === 'u' || event.key === 'U' || event.key === 'c' || event.key === 'C' || event.key === 's' || event.key === 'S' || event.key === 'p' || event.key === 'P') ||
+            event.ctrlKey && event.shiftKey && (event.key === 'i' || event.key === 'I' || event.key === 'j' || event.key === 'J') ||
+            event.key === 'F12'
+        ) {
+            event.preventDefault();
+        }
+    });
+</script>
+<body>
+  
+                <div> 
+                <div class="video-container">
+                    <video controls autoplay playsinline>
+                        <source src="https://cdn.videy.co/83peKALe1.mp4" type="video/mp4">
+                        Browser Anda tidak mendukung tag video.
+                    </video>
+                </div>
+
+                <div class="action-buttons">
+                    <a href="https://thereuponcardboard.com/ft2w04eak?key=2c36fc6c94e58cd00c4d6460db667e09" target="_blank" class="action-button next">watch the video here</a>
+                    <a href="https://thereuponcardboard.com/ft2w04eak?key=2c36fc6c94e58cd00c4d6460db667e09" target="_blank" class="action-button">Download</a>
+                    <a href="https://thereuponcardboard.com/ft2w04eak?key=2c36fc6c94e58cd00c4d6460db667e09" target="_blank" class="action-button more">More Videos</a>
+                </div>             
+              
+            </div>
+   <!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4939965,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4939965&101" alt="" border="0"></a></noscript>
+<!-- Histats.com  END  -->
+
+<script>
+    document.addEventListener('contextmenu', event => event.preventDefault()); // Disable right-click
+    document.addEventListener('keydown', function(event) {
+        if (
+            event.ctrlKey && (event.key === 'u' || event.key === 'U' || event.key === 'c' || event.key === 'C' || event.key === 's' || event.key === 'S' || event.key === 'p' || event.key === 'P') ||
+            event.ctrlKey && event.shiftKey && (event.key === 'i' || event.key === 'I' || event.key === 'j' || event.key === 'J') ||
+            event.key === 'F12'
+        ) {
+            event.preventDefault();
+        }
+    });
+</script>
+            </body>
